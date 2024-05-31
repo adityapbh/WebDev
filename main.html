@@ -1,0 +1,78 @@
+<!--This is doctype-->
+<!DOCTYPE html>
+<!--Our HTML code starts here-->
+<html lang = "en">
+<!--Head tag starts here-->
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "description" content = "This is a website on Library Management">
+    <meta name = "keywords" content = "Library management system using html, css, javascript">
+    <meta name = "robots" content = "INDEX, FOLLOW">
+    <title> Library Management system</title>
+
+    <!--This is how you include external CSS-->
+    <link rel="stylesheet" href="main.css">
+
+    <!--This is how you include external Javascript-->
+    <script src="main.js"></script>
+</head>
+
+<!--Body tag starts here-->
+<body>
+    <h1>Library Management System</h1>
+    <form action = "javascript.php">
+        <div>
+            Name: <input type="text" name="myName">
+        </div>
+        <br>
+        <div>
+            Batch : <select name = "myBatch">
+                <option value = "a" selected>Select from below</option>
+                <option value = "b">2021</option>
+                <option value = "c">2022</option>
+                <option value = "d">2023</option>
+                <option value = "e">2024</option>
+                <option value = "f">2025</option>
+            </select>
+        </div> 
+        <br>
+        <div>
+            Branch : <select name = "myBranch">
+                <option value = "1" selected>Select from below</option>
+                <option value = "2">Computer Science and Engineering</option>
+                <option value = "3">Electronics and Communication Engineering</option>
+                <option value = "4">Mechanical Engineering</option>
+                <option value = "5">Mathematics and Computing</option>
+                <option value = "6">Engineering Physics</option>
+                <option value = "7">BSMS</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Roll: <input type="number" name = "myRoll">
+        </div>
+        <br>
+        <div>
+            Date of Birth : <input type="date" name = "myDOB">
+        </div>
+        <br>
+        <div>
+            Gender : Male <input type="radio" name = "myGender"> Female <input type="radio" name = "myGender"> Other <input type="radio" name = "myGender">
+        </div>
+        <br>
+        <div>
+            Phone number : <input type="number" name = "myPhone">
+        </div>
+        <br>
+        <div>
+            College Email : <input type="email" name = "myEmail">
+        </div>
+        <br>
+        <input type="submit" value="Submit now">
+        <input type="reset" value="Reset now">
+    </form>
+    <!-- Here in the name section, corresponding file name from the backend is to be written-->
+</body>
+</html>
