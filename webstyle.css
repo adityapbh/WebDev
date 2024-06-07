@@ -1,0 +1,145 @@
+/* Reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0f0f0;
+}
+
+/* Search Box Styles */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-container button:hover {
+    background: #555;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
+
+/* Style for the Library Hours section */
+#hours {
+    background-color: #e8ebec;
+    padding: 20px 0;
+}
+
+#hours .container {
+  /* 800*/  max-width: 400px; 
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #131313;
+    border-radius: 9px;
+    /* 5 */
+}
+
+#hours h2 {
+   /* 24 */font-size: 30px; 
+    margin-bottom: 20px;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.hours-table th, .hours-table td {
+    border: 1px solid #e61313;
+    padding: 8px;
+}
+
+.hours-table th {
+    background-color: #d11414;
+    font-weight: bold;
+}
+
+.hours-table tr:nth-child(even) {
+    background-color: #eb0f0f;
+}
+
+.hours-table tr:hover {
+    background-color: #ee0c0c;
+}

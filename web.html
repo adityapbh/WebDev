@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website</title>
+    <link rel="stylesheet" href="webstyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Library Website</h1>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input type="text" placeholder="Search for books..." name="search">
+                    <select name="doctype">
+                        <option value="book">Book</option>
+                        <option value="ebook">E-Book</option>
+                        <option value=" viusal audio">Audio Visual Media</option>
+                        <option value="Digital media">Digital Media</option>
+                        <option value="Miscellaneous books">Miscellaneous books</option>
+                        <option value="Standard books">Standard books</option>
+                    </select>
+                    <select name="searchby">
+                        <option value="title">Title</option>
+                        <option value="author">Author</option>
+                        <option value="publisher">Publisher</option>
+                        <option value="ISBN">ISBN</option>
+                        <option value="Call Number">Call Number</option>
+                        <option value="genre">Genre</option>
+                        <option value="Department">Department</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#rules">Rules & Regulations</a></li>
+                    <li><a href="#notices">Notices</a></li>
+                    <li><a href="#circulation">Circulation Policy</a></li>
+                    <li><a href="#team">Library Team/Committee</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Home</h2>
+                <p>Welcome to our library website.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Learn more about our library.</p>
+            </div>
+        </section>
+
+        <section id="rules">
+            <div class="container">
+                <h2>Rules & Regulations</h2>
+                <p>Know the rules and regulations of the library.</p>
+            </div>
+        </section>
+
+        <section id="notices">
+            <div class="container">
+                <h2>Notices</h2>
+                <p>Stay updated with the latest notices.</p>
+            </div>
+        </section>
+
+        <section id="circulation">
+            <div class="container">
+                <h2>Circulation Policy</h2>
+                <p>Learn about our circulation policy.</p>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="container">
+                <h2>Library Team/Committee</h2>
+                <p>Meet our dedicated team.</p>
+            </div>
+        </section>
+
+        <section id="hours">
+
+            <div class="container">
+                <h2 >Working Hours</h2>
+                <table class="hours-table">
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Time</th>
+                            <th>Closing Time</th>
+                            <!-- th-> table heading -->
+                        </tr>
+                        <tr>
+                            <td>Monday to Friday</td>
+                            <td>9:00 AM</td>
+                            <td>6:00 PM</td>
+                        </tr>
+                         <!-- <tr>
+                            <td>Tuesday</td>
+                            <td>9:30 AM</td>
+                            <td>6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:30 AM</td>
+                            <td>6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9:30 AM</td>
+                            <td>6:00 PM</td>
+                        </tr> 
+                          <tr>
+                            <td>Friday</td>
+                            <td>9:30 AM</td>
+                            <td>6:00 PM</td>
+                        </tr> -->
+                        <tr>
+                            <td>Saturday and Sunday</td>
+                            <td>Closed</td>
+                            <td>Closed</td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                            <td>Closed</td>
+                        </tr> -->
+                    </table>
+                
+                
+                    <div class="note"><strong>*The Library will be closed on Institution defined holidays.</strong></div>
+                </div>
+                    <!-- <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday to Friday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>9:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:00 AM - 2:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody> -->
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
