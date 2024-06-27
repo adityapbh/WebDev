@@ -111,3 +111,21 @@ function logout() {
     document.getElementById('searchPage').style.display = 'none';
     document.getElementById('mainPage').style.display = 'block';
 }
+function viewpassword() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+function showLogin() {
+    document.getElementById("mainPage").style.display = "none";
+    document.getElementById("loginPage").style.display = "block";
+}
+
+// Go back to the main page from the login form
+function goBack() {
+    document.getElementById('loginPage').style.display = 'none';
+    document.getElementById('mainPage').style.display = 'block';
+}
