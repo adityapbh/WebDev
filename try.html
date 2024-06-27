@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Website</title>
-    <link rel="stylesheet" href="cgpt.css">
+    <link rel="stylesheet" href="try.css">
     <script src="try.js" defer></script>
+    
 </head>
 
 <body>
@@ -19,12 +20,12 @@
                     <ul>
                         <li><a href="#home">HOME</a></li>
                         <li><a href="#about_us">ABOUT US</a></li>
-                        <li><a href="#rules">RULES AND REGUALTIONS</a></li>
+                        <li><a href="#rules">RULES AND REGULATIONS</a></li>
                         <li><a href="#notices">NOTICES</a></li>
                         <li><a href="#circulation">CIRCULATION POLICY</a></li>
                         <li><a href="#team">LIBRARY COMMITTEE</a></li>
                         <li><a href="#hours">WORKING HOURS</a></li>
-                        <li><a id="loginButton" href="#">LOGIN</a></li>
+                        <li><a id="loginButton" href="#" onclick="showLogin()">LOGIN</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,8 +41,7 @@
             <section id="about_us">
                 <div class="container">
                     <h2>About Us</h2>
-                    <p>The library is a vital resource for research and learning. We provide access to a wide range of
-                        books and materials.</p>
+                    <p>The library is a vital resource for research and learning. We provide access to a wide range of books and materials.</p>
                 </div>
             </section>
 
@@ -74,43 +74,34 @@
             </section>
 
             <section id="hours">
-
                 <div class="container">
                     <h2>Working Hours</h2>
                     <table class="hours-table">
-                        <table>
-                            <tr>
-                                <th>Day</th>
-                                <th>Opening Time</th>
-                                <th>Closing Time</th>
-                                <!-- th-> table heading -->
-                            </tr>
-                            <tr>
-                                <td>Monday to Friday</td>
-                                <td>9:00 AM</td>
-                                <td>6:00 PM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday and Sunday</td>
-                                <td>Closed</td>
-                                <td>Closed</td>
-                            </tr>
-                        </table>
-
-
-                        <div class="note"><strong>*The Library will be closed on Institution defined holidays.</strong>
-                        </div>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Time</th>
+                            <th>Closing Time</th>
+                        </tr>
+                        <tr>
+                            <td>Monday to Friday</td>
+                            <td>9:00 AM</td>
+                            <td>6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday and Sunday</td>
+                            <td>Closed</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                    <div class="note"><strong>*The Library will be closed on Institution defined holidays.</strong></div>
                 </div>
-                </table>
-    </div>
-    </section>
-    </main>
-<!-- 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Library Website. All rights reserved.</p>
-        </div>
-    </footer> -->
+            </section>
+            <footer>
+                <div class="container">
+                    <p>&copy; 2023 Library Website. All rights reserved.</p>
+                </div>
+            </footer>
+        </main>
     </div>
 
     <!-- Login Page -->
@@ -122,7 +113,8 @@
                 <input type="email" id="email" name="email" placeholder="userid@iitdh.ac.in" required>
                 <br>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="LDAP password" required><br><br>
+                <input type="password" id="password" name="password" placeholder="LDAP password" required>
+                <br><br>
                 <input type="checkbox" onclick="viewpassword()">Show Password
                 <br>
                 <label>Select User Type:</label>
@@ -132,12 +124,12 @@
                 <label for="admin">Admin</label>
                 <br>
                 <button type="submit">Login</button>
+                <button type="button" onclick="goBack()">Go Back</button>
             </form>
         </div>
     </div>
-
-    <!-- Search Page -->
-    <div id="searchPage" style="display: none;">
+     <!-- Search Page -->
+     <div id="searchPage" style="display: none;">
         <header>
             <div class="container">
                 <h1>Library Website - Search Books</h1>
@@ -198,6 +190,9 @@
             </div>
         </footer>
     </div>
+</body>
+
+</html>
 </body>
 
 </html>
