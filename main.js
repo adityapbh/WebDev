@@ -1,3 +1,4 @@
+
 // Array to store added books
 let myBooks = [];
 
@@ -117,7 +118,16 @@ function searchBooks() {
 }
 
 // Add book to My Bag
+
 function addToBag(bookTitle) {
+    // Check if the book is already in the bag
+    const bookExists = myBooks.some(book => book.title === bookTitle);
+
+    if (bookExists) {
+        alert('This book is already in your bag.');
+        return;
+    }
+
     const book = window.bookData.find(b => b.title === bookTitle);
     if (book) {
         myBooks.push(book);
@@ -127,25 +137,30 @@ function addToBag(bookTitle) {
     }
 }
 
+
 // Update My Books Table
 function updateMyBooksTable() {
     const myBooksTableBody = document.querySelector('#myBooksTable tbody');
     myBooksTableBody.innerHTML = ''; // Clear previous entries
 
-    myBooks.forEach(book => {
+    myBooks.forEach((book,index) => {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${book.title}</td>
             <td>${book.author}</td>
             <td>${book.genre}</td>
             <td>${new Date().toLocaleDateString()}</td>
+            <td><button onclick="removefrombag(${index})">Remove</button></td>
            
             
         `;
         myBooksTableBody.appendChild(row);
     });
 }
-
+function removefrombag(index){
+    myBooks.splice(index,1);
+    updateMyBooksTable();
+}
 // Handle logout
 function logout() {
     document.getElementById('searchPage').style.display = 'none';
