@@ -5,112 +5,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Website</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="try.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <script src="github.js" defer></script>
 </head>
 
 <body>
     <!-- Main Page -->
     <div id="mainPage" style="display: block;">
-        <header>
-            <div class="container">
-                <h1>Library Website</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#about_us">ABOUT US</a></li>
-                        <li><a href="#rules">RULES AND REGULATIONS</a></li>
-                        <li><a href="#notices">NOTICES</a></li>
-                        <li><a href="#circulation">CIRCULATION POLICY</a></li>
-                        <li><a href="#team">LIBRARY COMMITTEE</a></li>
-                        <li><a href="#hours">WORKING HOURS</a></li>
-                        <li><a id="loginButton" href="#" onclick="showLogin()">LOGIN</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section id="home">
-                <div class="container">
-                    <h2>Home</h2>
-                    <p>Welcome to the Library. Explore our collection and find your next great read.</p>
-                </div>
-            </section>
 
-            <section id="about_us">
-                <div class="container">
-                    <h2>About Us</h2>
-                    <p>The library is a vital resource for research and learning. We provide access to a wide range of books and materials.</p>
-                </div>
-            </section>
+        <div id="logo">
+            <img src="image2.jpg">
+        </div>
+        <h3 id="lw">Library Website</h1>
+            <a id="loginButton" href="#" onclick="showLogin()">LOGIN</a>
+            <nav id="navbar">
+                <ul>
+                    <!-- <li><a href="#home">HOME</a></li> -->
+                    <li><a href="#about_us">ABOUT US</a></li>
+                    <li><a href="#rules">RULES AND REGULATIONS</a></li>
+                    <li><a href="#notices">NOTICES</a></li>
+                    <li><a href="#circulation">CIRCULATION POLICY</a></li>
+                    <li><a href="#team">LIBRARY COMMITTEE</a></li>
+                    <li><a href="#hours">WORKING HOURS</a></li>
+                </ul>
+            </nav>
+            <main>
+                <!-- <section id="home">
+                
+                    <h1 class="h-primary">Welcome to the Library. Explore our collection and find your next great read </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora fac </p>
+            
+            </section> -->
 
-            <section id="rules">
-                <div class="container">
-                    <h2>Rules & Regulations</h2>
-                    <p>Please follow our rules to ensure a pleasant environment for all users.</p>
-                </div>
-            </section>
+                <section id="about_us">
 
-            <section id="notices">
-                <div class="container">
-                    <h2>Notices</h2>
+                    <h1>About Us</h1>
+                    <p>The library is a vital resource for research and learning. We provide access to a wide range of
+                        books and materials.<br>
+
+                        The Library collection consists of nearly 4750+ books in various disciplines. These are arranged
+                        subject-wise. It has also acquired a few ISO standards (International Standards Organization) in
+                        digital form. At present, the main motto is to build up the Library collection such that it has
+                        information resources up to Ph.D. level, including advanced texts and reference materials.
+
+
+                        Our Institute is a Life Member of the prestigious “Current Science Association” of the “Indian
+                        Academy of Sciences”, and receiving the “Current Science” journal. It also receives some
+                        national newspapers and light reading magazines. Very soon, some popular S&T magazines will be
+                        at readers’ disposal, which will make young minds aware of recent happenings in the scientific
+                        world. Being a part of Inflibnet -eShodhSindhu, the serious readers can access nearly 7000+
+                        reputed E-Journals (Cambridge, Oxford University, Springer, T&F, etc.), Elsevier ScienceDirect
+                        05 Subject Collection, Databases (MathSciNet, ACM Digital Library, IEEE Electronic Library,
+                        JSTOR, Project Muse, etc.) and Society Publications (ACS, AIP, APS, ASME, OSA, ACM, etc.)
+                        literature retrospectively. This collection is the bread-n-butter for the Institute’s research
+                        scholars and faculty members to quench their thirst for state-of-the-art knowledge.
+                    </p>
+
+                </section>
+
+                <section id="rules">
+
+                    <h1>Rules & Regulations</h1>
+                    <p>(Please follow our rules to ensure a pleasant environment for all users.)<br>
+                        <center>
+                            <h3>General Rules & Regulations of the Central Library</h3>
+                        </center><br>
+
+
+                        1. Entry only against IITDh ID card.<br>
+
+                        2. Strict silence is to be maintained in the library.<br>
+
+                        3. Only notebooks/scribbling pads, pens, pencils, calculators are allowed in the library.<br>
+
+                        4. Backpack should be deposited outside the library area in the designated place.<br>
+
+                        5. Use of mobiles and discussions are prohibited in the library.<br>
+
+                        6. Writing on tables and in books is prohibited.<br>
+
+                        7. Edibles are not allowed.<br>
+
+                        8. Waste papers should be put in the dust bins.<br>
+
+                        9. No library resources are allowed to be taken out of the library without proper
+                        authorization.<br>
+
+                        10. Books should be left on tables after their use.<br>
+                        <center>
+                            <h3>Library Overdue Fine Policy</h3>
+                        </center>
+                    <div id="Overdue Policy" class="tabcontent" style="display: block;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Patron Category</td>
+                                    <td>All Library Borrowed Items</td>
+                                </tr>
+                                <tr>
+                                    <td>To All Patrons</td>
+                                    <td>INR 2.00 per day(First 7 days)<br>
+                                        INR 5.00 per day(8th day and onwards)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        </p>
+
+                </section>
+
+                <section id="notices">
+
+                    <h1>Notices</h1>
                     <p>Stay updated with the latest notices and announcements from the library.</p>
-                </div>
-            </section>
 
-            <section id="circulation">
-                <div class="container">
-                    <h2>Circulation Policy</h2>
-                    <p>Learn about our circulation policies and borrowing limits.</p>
-                </div>
-            </section>
+                </section>
 
-            <section id="team">
-                <div class="container">
-                    <h2>Library Team/Committee</h2>
-                    <p>Meet the dedicated team behind the library operations.</p>
-                </div>
-            </section>
+                <section id="circulation">
 
-            <section id="hours">
-                <div class="container">
-                    <h2>Working Hours</h2>
-                    <table class="hours-table">
-                        <tr>
-                            <th>Day</th>
-                            <th>Opening Time</th>
-                            <th>Closing Time</th>
-                        </tr>
-                        <tr>
-                            <td>Monday to Friday</td>
-                            <td>9:00 AM</td>
-                            <td>6:00 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday and Sunday</td>
-                            <td>Closed</td>
-                            <td>Closed</td>
-                        </tr>
-                    </table>
-                    <div class="note"><strong>*The Library will be closed on Institution defined holidays.</strong></div>
-                </div>
-            </section>
-            <footer>
-                <div class="container">
-                    <p>&copy; 2023 Library Website. All rights reserved.</p>
-                </div>
-            </footer>
-        </main>
+                    <h1>Circulation Policy</h1>
+                    <div id="Circulation Policy" class="tabcontent" style="display: block;">
+
+                        <br>
+                        <p style="text-align:center"><u><span style="font-size:14px"><span
+                                        style="font-family:Trebuchet MS,Helvetica,sans-serif"><strong>Issue/Return/Renewal
+                                            of the Library Materials</strong></span></span></u></p><br>
+
+                        <center>
+                            <table>
+                                <tr>
+                                    <td rowspan="3">Resources</td>
+                                    <td colspan="9">Library Patron Category</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Faculty</td>
+                                    <td colspan="2">Research Scholars</td>
+                                    <td colspan="2">M.Tech/Btech Students</td>
+                                    <td colspan="2">Administrative and
+                                        Project Staff including Trainees</td>
+                                    <td rowspan="2">Renewal
+
+                                        (If there is no Reservation)</td>
+                                </tr>
+                                <tr>
+                                    <td>Nos</td>
+                                    <td>Period</td>
+                                    <td>Nos</td>
+                                    <td>Period</td>
+                                    <td>Nos</td>
+                                    <td>Period</td>
+                                    <td>Nos</td>
+                                    <td>Period</td>
+                                </tr>
+                                <tr>
+                                    <td>Books</td>
+                                    <td>10</td>
+                                    <td>180 Days</td>
+                                    <td>3</td>
+                                    <td>30 Days</td>
+                                    <td>2</td>
+                                    <td>15 Days</td>
+                                    <td>3</td>
+                                    <td>30 Days</td>
+                                    <td>One Time</td>
+
+                                </tr>
+                                <tr>
+                                    <td>Reference Books</td>
+                                    <td>2</td>
+                                    <td>15 Days</td>
+                                    <td>0</td>
+                                    <td>NA</td>
+                                    <td>0</td>
+                                    <td>NA</td>
+                                    <td>0</td>
+                                    <td>NA</td>
+                                    <td>Not Available</td>
+
+                                </tr>
+
+                            </table>
+                        </center>
+                
+                        <br>
+
+                    </div>
+                </section>
+
+                <section id="team">
+
+                    <h1>Library Team/Committee</h1>
+                    <div id="Library Team" class="tabcontent" style="display: block;">
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td> S.No</td>
+                                    <td>Library Team</td>
+
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aditya Prabhakar - Library Officer</td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Tiyasa Das - Junior Library Information Superintendent</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Ch.Haswika - Junior Library Information Superintendent</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>P.Preksha - Junior Library Information Superintendent</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+
+
+
+                <h1>Working Hours</h1>
+                <table id="hours">
+                    <tr>
+                        <th>Day</th>
+                        <th>Opening Time</th>
+                        <th>Closing Time</th>
+                    </tr>
+                    <tr>
+                        <td>Monday to Friday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday and Sunday</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+                <div class="note"><strong>*The Library will be closed on Institution defined holidays.</strong></div>
+
+
+                <footer>
+                    <div class="footer">
+                        <p>&copy; 2023 Library Website. All rights reserved.</p>
+                    </div>
+                </footer>
+            </main>
     </div>
 
     <!-- Login Page -->
     <div id="loginPage" style="display: none;">
-        <div class="container">
+        <div class="login">
             <h2>Login Form</h2>
-            <form id="loginForm">
+            <form id="loginForm" >
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" oninput="ValidateEmail(email)" placeholder="userid@iitdh.ac.in" required>
-                <span id="emailFeedback" style="color: red;"></span>
+                <input type="email" id="email" name="email" 
+                    placeholder="userid@iitdh.ac.in" required>
+              
                 <br>
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="LDAP password" required>
@@ -123,48 +279,27 @@
                 <input type="radio" id="admin" name="userType" value="admin" required>
                 <label for="admin">Admin</label>
                 <br>
-                <button type="submit">Login</button>
+                <button type="submit"onclick="return validateEmail()">Login</button>
                 <button type="button" onclick="goBack()">Go Back</button>
+                <p id="error-message" style="color:red; display: none;">Invalid email format.Please use (userid)@iitdh.ac.in.</p>
             </form>
         </div>
     </div>
-    
+
     <!-- Search Page -->
     <div id="searchPage" style="display: none;">
         <header>
-            <div class="container">
-                <h1>Library Website - Personal</h1>
-                <button id="logoutButton" onclick="logout()">Logout</button>
-                <button onclick="showRecommendForm()">Recommend Book</button>
-        
+            <div class="container" id="heading">
+                <h1 id="lwp"> Library Website - Personal</h1>
+                <button style="position: absolute;float:right;top:30px;right:100px;width: 60px;font-size: 17px;"
+                    id="logoutButton" onclick="logout()">Logout</button>
+                <button style="position: absolute;float:right;top:30px;right:300px;width: 150px;font-size: 17px;"
+                    onclick="showRecommendForm()">Recommend Book</button>
+
             </div>
         </header>
 
         <main>
-            <section id="search">
-                <div class="container">
-                    <h2>Search Books</h2>
-                    <div class="search-container">
-                        <input type="text" id="searchBox" placeholder="Search for books...">
-                        <select id="searchBy" name="searchby">
-                            <option value="title">Title</option>
-                            <option value="description">Description</option>
-                            <option value="author">Author</option>
-                            <option value="genre">Genre</option>
-                            <option value="department">Department</option>
-                            <option value="publisher">Publisher</option>
-                            <option value="vendor">Vendor</option>
-                            <option value="vendor_id">Vendor_Id</option>
-                            <option value="publisher_id">Publisher_Id</option>
-                        </select>
-                        <button type="button" onclick="searchBooks()">Search</button>
-                    </div>
-                    <div id="searchResults">
-                        <!-- Search results will be displayed here -->
-                    </div>
-                </div>
-            </section>
-
             <section id="myBooks">
                 <div class="container">
                     <h2>My Books</h2>
@@ -186,6 +321,31 @@
                     </table>
                 </div>
             </section>
+            <section id="search">
+                <div class="container">
+                    <h2 id="searchbooks">Search Books</h2>
+                    <div class="search-container">
+                        <input type="text" id="searchBox" placeholder="Search for books...">
+                        <select id="searchBy" name="searchby">
+                            <option value="title">Title</option>
+                            <option value="description">Description</option>
+                            <option value="author">Author</option>
+                            <option value="genre">Genre</option>
+                            <option value="department">Department</option>
+                            <option value="publisher">Publisher</option>
+                            <option value="vendor">Vendor</option>
+                            <option value="vendor_id">Vendor_Id</option>
+                            <option value="publisher_id">Publisher_Id</option>
+                        </select>
+                        <button type="button" onclick="searchBooks()">Search</button>
+                    </div>
+                    <div id="searchResults">
+                        <!-- Search results will be displayed here -->
+                    </div>
+                </div>
+            </section>
+
+
         </main>
 
         <footer>
@@ -198,7 +358,7 @@
         <header>
             <div class="container">
                 <h1>Recommendation Form</h1>
-               
+
             </div>
         </header>
 
