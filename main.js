@@ -184,27 +184,17 @@ function goBack() {
     document.getElementById('loginPage').style.display = 'none';
     document.getElementById('mainPage').style.display = 'block';
 }
-function ValidateEmail(input) {
+function validateEmail(){
+    const emailInput=document.getElementById('email').value;
+    const errorMessage=document.getElementById('error-message');
+    const emailPattern=/^[a-zA-Z0-9._%+-]+@iitdh\.ac\.in$/;
 
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[iitdh]+(.ac)+(.in)/;
-  
-    // if (input.value.match(validRegex)) {
-  
-    //   alert("Valid email address!");
-  
-    //   document.form1.text1.focus();
-  
-    //   return true;
-  
-    // }
-     if (!input.value.match(validRegex)){
-  
-      alert("Invalid email address!");
-  
-      document.form1.text1.focus();
-  
-      return false;
-  
+    if(emailPattern.test(emailInput)){
+        errorMessage.style.display='none';
+        return true;
     }
-  
-  }
+    else{
+        errorMessage.style.display='block';
+        return false;
+    }
+}
