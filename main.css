@@ -587,3 +587,22 @@ th {
 
 
 
+table {
+    font-family: Trebuchet MS,Helvetica,sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+     border-bottom:1px solid black;
+      border-left:1px solid;
+       border-right:1px solid black; 
+        border-top:1px solid;
+        height:12px;
+        width:37px;
+        text-align:center;
+  }
