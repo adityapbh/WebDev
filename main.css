@@ -9,66 +9,6 @@
     --navbar-height: 59px;
 }
 
-/* Login page styles */
-#loginPage {
-    background-color: #fff;
-    padding: 20px;
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#loginPage h1 {
-    margin-bottom: 20px;
-    color: #333;
-}
-
-#loginForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#loginForm label {
-    margin-bottom: 10px;
-    display: block;
-}
-
-#loginForm input[type="email"],
-#loginForm input[type="password"],
-#loginForm button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-#loginForm input[type="email"]:focus,
-#loginForm input[type="password"]:focus {
-    outline: none;
-    border-color: #333;
-}
-
-#loginForm button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-#loginForm button[type="submit"]:hover {
-    background-color: #555;
-}
-
-#goback{
-    font-size: 1rem;;
-}
 
 /*main page */
 
@@ -80,7 +20,7 @@
     height: 40px;
     margin: 4px 5px;
 }
-
+/* library website */
 #lw {
     position: absolute;
     top: 1px;
@@ -120,6 +60,7 @@
     color: rgb(11, 11, 50);
 }
 
+/*navbar styling*/
 #navbar {
     display: inline-flex;
     align-items: center;
@@ -347,6 +288,68 @@
     display: flex;
 }
 
+/* Login page styles */
+#loginPage {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#loginPage h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginForm label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+#loginForm input[type="email"],
+#loginForm input[type="password"],
+#loginForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#loginForm input[type="email"]:focus,
+#loginForm input[type="password"]:focus {
+    outline: none;
+    border-color: #333;
+}
+
+#loginForm button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#loginForm button[type="submit"]:hover {
+    background-color: #555;
+}
+
+#goback{
+    font-size: 1rem;;
+}
+
+
 /*search styling*/
 
 .search-container {
@@ -380,18 +383,11 @@
 }
 
 
-#search{
-    max-height: 450px;
-    overflow-y: auto;
-    margin-left: 0px;
-
-}
-
 #searchResults{
+    margin-left: 10px;
     margin-right: 400px;
 
 }
-
 
 #search{
     max-height: 450px;
@@ -406,13 +402,7 @@
     margin-left: 10px;
 
 }
-
-#searchResults{
-    margin-left: 10px;
-    margin-right: 400px;
-
-}
-
+/*heading library website personal*/
 #lwp{
     font-size: 1.7rem;
 }
@@ -543,11 +533,6 @@ th {
      margin: 10px;
      border: 2px solid black;
      padding-right: 10px;
-}
-
-.container h1{
-    text-align: center;
-    margin: 0;
 }
 
 
