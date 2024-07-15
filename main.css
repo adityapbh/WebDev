@@ -66,6 +66,10 @@
     background-color: #555;
 }
 
+#goback{
+    font-size: 1rem;;
+}
+
 /*main page */
 
 #logo {
@@ -102,15 +106,15 @@
 }
 
 #navbar {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     height: var(--navbar-height);
-    position: absolute;
     padding-left: 10px;
     padding-right: 10px;
+    position: absolute;
     top: -1%;
-    right: 6.5%;
-    left:8%;
+    right: 10%;
+    left:15%;
 }
 
 #navbar::before {
@@ -126,13 +130,14 @@
 #navbar ul {
     display: flex;
     align-items: stretch;
-    margin-left: 5px;
+    margin:auto;
     gap: 2px;
+    text-align: center;
 }
 
 #navbar ul li {
     list-style: none;
-    font-size: 105%;
+    font-size: 0.9rem;
 }
 
 #navbar ul li a {
@@ -151,16 +156,12 @@
 
 #about_us{
     display: flex;
-    position: absolute;
     flex-direction: column;
     padding: 250px 200px;
     padding-top: 60px;
     justify-content: center;
     align-items: center;
     background-color: #9195ad;
-    top:6.5%;
-    right:0%;
-    left: 0%;
 }
 
 #about_us h1 {
@@ -181,16 +182,12 @@
 
 #rules{
     display: flex;
-    position: absolute;
     flex-direction: column;
     padding: 100px 200px;
     padding-top: 35px;
     justify-content: center;
     align-items: center;
     background-color: rgb(217, 238, 225);
-    top:100%;
-    right:0%;
-    left: 0%;
 }
 
 #rules h1 {
@@ -210,16 +207,12 @@
 
 #notices{
     display: flex;
-    position: absolute;
     flex-direction: column;
     padding: 100px 200px;
     padding-top: 60px;
     justify-content: center;
     align-items: center;
     background-color: #dbb3cb;
-    top:185%;
-    right:0%;
-    left: 0%;
 }
 
 #notices h1 {
@@ -238,16 +231,12 @@
 
 #circulation{
     display: flex;
-    position: absolute;
     flex-direction: column;
     padding: 100px 200px;
     padding-top: 60px;
     justify-content: center;
     align-items: center;
     background-color: #efd2af;
-    top:218%;
-    right:0%;
-    left: 0%;
 }
 
 #circulation h1 {
@@ -267,16 +256,12 @@
 
 #team{
     display: flex;
-    position: absolute;
     flex-direction: column;
     padding: 100px 200px;
     padding-top: 60px;
     justify-content: center;
     align-items: center;
     background-color: #dcd5e9;
-    top:280%;
-    right:0%;
-    left: 0%;
 }
 
 #team h1 {
@@ -301,15 +286,11 @@
 
 #hours{
     display: flex;
-    position: absolute;
     flex-direction: column;
-    padding: 100px 200px;
+    padding: 15px 200px;
     padding-top: 60px;
     justify-content: center;
     align-items: center;
-    top:325%;
-    right:0%;
-    left: 0%;
 }
 
 #hours{
@@ -341,34 +322,25 @@
 
 .note{
     display: flex;
-    position: absolute;
     flex-direction: column;
-    padding: 100px 200px;
-    padding-top: 60px;
-    padding-left: 505px;
     justify-content: center;
     align-items: center;
-    top:2560px;
     font-size: 1.3rem;
 }
 
 .footer{
     display: flex;
-    position: absolute;
-    top:2700px;
 }
 
 /*search styling*/
 
 .search-container {
     margin-bottom: 20px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 10px;
 }
 
 #searchbooks{
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left:10px;
 }
 
 .search-container input[type="text"],
@@ -401,7 +373,6 @@
 }
 
 #searchResults{
-    margin-left: 400px;
     margin-right: 400px;
 
 }
@@ -417,16 +388,19 @@
 /*my books*/
 
 #myBooks{
-    margin-left: 300px;
+    margin-left: 10px;
 
 }
 
 #searchResults{
-    margin-left: 400px;
+    margin-left: 10px;
     margin-right: 400px;
 
 }
 
+#lwp{
+    font-size: 1.7rem;
+}
 
 /* Sections */
 section {
@@ -450,6 +424,10 @@ section h2 {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+}
+
+label{
+    display: inline-block;
 }
 
 .hours-table th,
@@ -560,8 +538,3 @@ th {
     text-align: center;
     margin: 0;
 }
-
-
-
-
-
