@@ -5,32 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Website</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="try.css">
 
      <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap"
      rel="stylesheet">
-    <script src="main.js" defer></script>
+    <script src="amain.js" defer></script>
 </head>
 
 <body>
     <!-- Main Page -->
-    <div id="mainPage" style="display: block;">        
+    <div id="mainPage" >        
                 
-                    <div id="logo">
-                      <img src="image1.jpg">
-                    </div>
-                    <h3 id="lw">Library Website</h1>
-                        <a id="loginButton" href="#" onclick="showLogin()">LOGIN</a>
+        <div id="logo">
+            <img src="image2.jpg">
+          </div>
+          <h3 id="lw">Library Website</h1>
+              <a id="loginButton" href="#" onclick="showLogin()">LOGIN</a>
                     <nav id="navbar">
                     <ul>
                         <li><a href="#about_us">ABOUT US</a></li>
-                        <li><a href="#rules">RULES AND REGULATIONS</a></li>
+                        <li><a href="#rules">RULES</a></li>
                         <li><a href="#notices">NOTICES</a></li>
                         <li><a href="#circulation">CIRCULATION POLICY</a></li>
                         <li><a href="#team">LIBRARY COMMITTEE</a></li>
                         <li><a href="#hours">WORKING HOURS</a></li>
                     </ul>
                 </nav>
+            
         <main>
 
             <section id="about_us">
@@ -58,7 +59,7 @@
         
             </section>
 
-            <section id="rules">
+           <section id="rules">
                 
                     <h1>Rules & Regulations</h1>
                     <h1>(Please follow our rules to ensure a pleasant environment for all users.)</h1>
@@ -105,7 +106,7 @@
                 
             </section>
 
-            <section id="notices">
+           <section id="notices">
                 
                     <h1>Notices</h1>
                     <p>Stay updated with the latest notices and announcements from the library.</p>
@@ -244,7 +245,7 @@
     </div>
 
      <!-- Login Page -->
-     <div id="loginPage" style="display: none;">
+    <div id="loginPage" style="display: none;">
         <div class="login">
             <h2>Login Form</h2>
             <form id="loginForm" >
@@ -265,7 +266,7 @@
                 <label for="admin">Admin</label>
                 <br>
                 <button type="submit"onclick="return validateEmail()">Login</button>
-                <button type="button" onclick="goBack()">Go Back</button>
+                <button style="font-size:20px;" onclick="goBack()">Go Back</button>
                 <p id="error-message" style="color:red; display: none;">Invalid email format.Please use (userid)@iitdh.ac.in.</p>
             </form>
         </div>
@@ -273,13 +274,12 @@
 
 
     
-    <!-- Search Page -->
     <div id="searchPage" style="display: none;">
         <header>
             <div class="container" id="heading">
                 <h1 id="lwp"> Library Website - Personal</h1>
                 <button style="position: absolute;float:right;top:30px;right:100px;width: 60px;font-size: 17px;" id="logoutButton" onclick="logout()">Logout</button>
-                <button style="position: absolute;float:right;top:30px;right:300px;width: 150px;font-size: 17px;"  onclick="showRecommendForm()">Recommend Book</button>
+                <button style="position: absolute;float:right;top:30px;right:190px;width: 150px;font-size: 17px;"  onclick="showRecommendForm()">Recommend Book</button>
         
             </div>
         </header>
