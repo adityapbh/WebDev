@@ -14,7 +14,8 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  const person = signup.findOne({email : ""});
+  res.sendFile("./main.html");
+  /*const person = signup.findOne({email : ""});
   if (person){
     if (person.password == ""){
         res.sendFile("./signup.html");
@@ -22,7 +23,7 @@ app.get('/', (req, res) => {
   } 
   else{
     res.sendFile("./login.html");
-  } 
+  }*/
 })
 
 app.listen(port, () => {
