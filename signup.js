@@ -32,7 +32,7 @@ document.getElementById('signupForm').addEventListener('submit', function (event
 
         // Redirect to login page after 2 seconds
         setTimeout(() => {
-            window.location.href = 'try1html.html';
+            window.location.href = 'main.html';
         }, 2000);
 
     } else {
